@@ -1,24 +1,245 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  
-    <title>Fatma Sayed Farrag</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practice Task</title>
 </head>
+
 <body>
 
+    <!-- header -->
+    <header>
+        <h1>My Name is Fatma Sayed Farag</h1>
+        <h2>I graduated with a degree in Electronics and Communication Engineering</h2>
+        <h3>I have been working as a Freelance WordPress Developer for over 6 years.</h3>
+    </header>
 
-    <h1>Fatma Sayed Farrag</h1>
-     <p>Hello! I am a web developer and designer specializing in WordPress, Elementor, WooCommerce, <br>
-        and front-end site customizations. I enjoy building interactive and user-friendly web interfaces.</p>
+    <!-- navigation -->
+    <nav>
+        <a href="#about">About Me</a> |
+        <a href="#skills">My Skills</a> |
+        <a href="#goals">Learning Goals</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#contact">Contact Me</a>
+    </nav>
 
-        <p>I am passionate about learning modern web technologies, optimizing site performance, <br>
-            and delivering clean, efficient solutions to meet client needs.</p>
-<p>You can connect with me on LinkedIn: <a href="https://www.linkedin.com/in/fatma-sayed-925742143" 
-    target="_blank">My LinkedIn Profile</a></p>
-   
-   <img src="WhatsApp Image 2026-10-06 at 23.18.11.jpeg" alt="Picture" width="300">
-   
+    <!-- main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <article>
+                <p>
+                    My name is Fatma Sayed Farag. I graduated with a degree
+                    in Electronics and Communication Engineering,
+                    and I have been working as a Freelance WordPress
+                    Developer for over 6 years.
+                </p>
+
+                <p>
+                    You can connect with me on LinkedIn:
+                    <a href="https://www.linkedin.com/in/fatma-sayed-925742143"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        My LinkedIn Profile
+                    </a>
+                </p>
+
+                <img src="WhatsApp Image 2026-10-21 at 16.34.53.jpeg"
+                     alt="Picture"
+                     width="300">
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>WordPress</li>
+                <li>Web Design</li>
+                <li>Good research skills and finding information</li>
+                <li>Converting Figma designs into web pages from scratch</li>
+            </ul>
+        </section>
+
+        <!-- Learning Goals Section -->
+        <section id="goals">
+            <h2>My Learning Goals</h2>
+
+            <ol>
+                <li>Learn JavaScript</li>
+                <li>Improve my CSS skills</li>
+                <li>Learn how to find and attract clients independently</li>
+                <li>Learn how to develop WordPress plugins from scratch</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects Table</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>AJAK Medical</td>
+                        <td>An online store for medical, beauty, and healthcare products.</td>
+                        <td>Completed</td>
+                        <td>
+                            <a href="https://ajakmedical.com/" target="_blank">
+                                Visit Website
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Hayward Electrician</td>
+                        <td>A website for an electrical services company.</td>
+                        <td>Completed</td>
+                        <td>
+                            <a href="https://hayward-electrician.com/" target="_blank">
+                                Visit Website
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>GreenPlus Environmental</td>
+                        <td>A corporate website for environmental consulting and sustainability services.</td>
+                        <td>Completed</td>
+                        <td>
+                            <a href="https://greenplusenvironment.com/" target="_blank">
+                                Visit Website
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form>
+                <div>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                
+<div>
+    <label for="governorate">Choose Your Governorate:</label>
+    <select id="governorate" name="governorate" required>
+        <option value="">Select a governorate</option>
+        <option value="Cairo">Cairo</option>
+        <option value="Giza">Giza</option>
+        <option value="Alexandria">Alexandria</option>
+        <option value="Luxor">Luxor</option>
+        <option value="Aswan">Aswan</option>
+        <option value="Qena">Qena</option>
     
+    </select>
+</div>
+
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- audio and video Section -->
+        <section id="media">
+            <h2>Audio and Video</h2>
+
+            <audio controls>
+                <source src="liecio-calming-rain-257596.mp3" type="audio/mpeg">
+               
+            </audio>
+
+            <br>
+
+            <video controls width="200">
+                <source src="WhatsApp Video 2026-10-21 at 16.35.54.mp4" type="video/mp4">
+               
+            </video>
+        </section>
+
+        <hr>
+
+
+
+        
+        <!-- HTML Tutorial Section -->
+        <section id="tutorial">
+            <h2>Learn HTML</h2>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=7CGJpFGstjXU0BJw" 
+                              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                             encrypted-media; gyroscope; picture-in-picture;
+                             web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+               
+               
+        </section>
+
+        <!-- More About Me Section -->
+        <section id="more-about">
+            <h2>More About Me</h2>
+
+            <article>
+                <details>
+                    <summary>Click to learn more about me</summary>
+
+                    <p>I am a WordPress developer with experience in web design.</p>
+
+                    <p>I enjoy researching information and converting Figma designs into web pages from scratch.</p>
+
+                    <p>My goals are to learn WordPress plugin development and attract clients independently.</p>
+                </details>
+            </article>
+        </section>
+
+    </main>
+
+
+    <hr>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2026 Fatma Sayed Farag. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
